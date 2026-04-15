@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "16.17.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "soriana-admindocs-boveda",
+    "libraryId": "51141bde-6f41-4581-9175-d6a668e2ca84",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "soriana-admindocs-boveda",
+    "solutionShortDescription": "soriana-admindocs-boveda description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

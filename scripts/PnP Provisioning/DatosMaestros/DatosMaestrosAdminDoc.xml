@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.11.2.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-EA1381485AB642E88CB688730BF9FB4C">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-EA1381485AB642E88CB688730BF9FB4C" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Asuetos" Description=" " DocumentTemplate="" TemplateType="100" Url="Lists/Asuetos" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Asuetos/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Asuetos/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Asuetos/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{1E872001-FF11-4B49-A5CD-5609109215E8}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los elementos" Url="{site}/Lists/Asuetos/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Fecha" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Fecha" FriendlyDisplayFormat="Disabled" Format="DateOnly" IsModern="TRUE" Name="Fecha" Required="TRUE" Title="Fecha" Type="DateTime" ID="{6119ce68-e19d-44e0-ae2c-8edc57af885b}" SourceID="{{listid:Asuetos}}" StaticName="Fecha" ColName="datetime1" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="TRUE" Indexed="TRUE" CalType="0" Version="4" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" DisplayName="Título" />
+          </pnp:FieldRefs>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Año Nuevo</pnp:DataValue>
+              <pnp:DataValue FieldName="Fecha">2023-04-06T05:00:00Z</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Día de la Constitución Mexicana</pnp:DataValue>
+              <pnp:DataValue FieldName="Fecha">2023-02-06T06:00:00Z</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Natalicio de Benito Juárez</pnp:DataValue>
+              <pnp:DataValue FieldName="Fecha">2023-03-20T06:00:00Z</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Día Internacional de los Trabajadores</pnp:DataValue>
+              <pnp:DataValue FieldName="Fecha">2023-05-01T05:00:00Z</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Día de la Independencia de México</pnp:DataValue>
+              <pnp:DataValue FieldName="Fecha">2023-09-16T05:00:00Z</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Aniversario de la Revolución Mexicana</pnp:DataValue>
+              <pnp:DataValue FieldName="Fecha">2023-11-20T06:00:00Z</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Navidad</pnp:DataValue>
+              <pnp:DataValue FieldName="Fecha">2023-12-25T06:00:00Z</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://southcentralus1-0.pushnp.svc.ms/notifications?token=84186209-a46a-44e3-bff9-1f97c8e51c5f" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://southcentralus1-0.pushnp.svc.ms/notifications?token=5515262f-0831-41dc-a269-e23e0c0ded0e" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="GerentesSucursales" Description=" " DocumentTemplate="" TemplateType="100" Url="Lists/GerentesSucursales" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/GerentesSucursales/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/GerentesSucursales/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/GerentesSucursales/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{94D91F65-3388-4BFC-904C-10B5223DAD66}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los elementos" Url="{site}/Lists/GerentesSucursales/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="Sucursal" />
+                <FieldRef Name="Sucursal_x003a_Consecutivo" />
+                <FieldRef Name="Usuario" />
+                <FieldRef Name="DireccionArea" />
+                <FieldRef Name="RegionalZona" />
+                <FieldRef Name="Activo" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Boolean" DisplayName="Activo" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{86663d89-8b91-470e-9976-024e9e099744}" SourceID="{{listid:GerentesSucursales}}" StaticName="Activo" Name="Activo" ColName="bit1" RowOrdinal="0">
+              <Default>1</Default>
+            </Field>
+            <Field Type="User" DisplayName="Usuario" List="UserInfo" Required="TRUE" Indexed="TRUE" EnforceUniqueValues="TRUE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{51d97c8f-7791-40ec-8d38-d93cc08390ef}" SourceID="{{listid:GerentesSucursales}}" StaticName="Usuario" Name="Usuario" ColName="int1" RowOrdinal="0" Version="2" />
+            <Field Type="User" DisplayName="DireccionArea" List="UserInfo" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{cc29b6c4-95fd-4a55-a8d3-1fc08f3cd64f}" SourceID="{{listid:GerentesSucursales}}" StaticName="DireccionArea" Name="DireccionArea" ColName="int2" RowOrdinal="0" />
+            <Field Type="User" DisplayName="RegionalZona" List="UserInfo" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{d65b5bd0-a6e2-48fb-8742-73eff101e883}" SourceID="{{listid:GerentesSucursales}}" StaticName="RegionalZona" Name="RegionalZona" ColName="int3" RowOrdinal="0" Group="" Version="1" />
+            <Field DisplayName="Sucursal" Format="Dropdown" Indexed="TRUE" IsModern="TRUE" List="{listid:Sucursales}" Name="Sucursal" Required="TRUE" ShowField="Title" Title="Sucursal" Type="Lookup" ID="{1575f929-3eb1-4939-ab6e-5bebcd2ab991}" SourceID="{{listid:GerentesSucursales}}" StaticName="Sucursal" ColName="int4" RowOrdinal="0" EnforceUniqueValues="TRUE" Group="" UnlimitedLengthInDocumentLibrary="FALSE" Version="4" RelationshipDeleteBehavior="None" />
+            <Field Type="Lookup" DisplayName="Sucursal:Consecutivo" List="{listid:Sucursales}" WebId="{siteid}" ShowField="Consecutivo" FieldRef="1575f929-3eb1-4939-ab6e-5bebcd2ab991" ReadOnly="TRUE" UnlimitedLengthInDocumentLibrary="FALSE" ID="{bafbc2eb-fd0d-4160-9130-d2d45b301936}" SourceID="{{listid:GerentesSucursales}}" StaticName="Sucursal_x003a_Consecutivo" Name="Sucursal_x003a_Consecutivo" Version="1" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Título" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://southcentralus1-0.pushnp.svc.ms/notifications?token=8531f1d9-bf0e-48e5-98b3-81cc88137b5c" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://southcentralus1-0.pushnp.svc.ms/notifications?token=d4188a3f-d902-4ef7-87be-ff8f50b2859b" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Notificaciones" Description=" " DocumentTemplate="" TemplateType="100" Url="Lists/Notificaciones" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Notificaciones/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Notificaciones/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Notificaciones/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A831B287-DB05-4E9C-8925-63301E4ADE85}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los elementos" Url="{site}/Lists/Notificaciones/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="AsuntoCorreo" />
+                <FieldRef Name="CuerpoCorreo" />
+                <FieldRef Name="Destinatario" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="AsuntoCorreo" EnforceUniqueValues="FALSE" Format="Dropdown" Indexed="TRUE" IsModern="TRUE" MaxLength="255" Name="AsuntoCorreo" Required="TRUE" Title="AsuntoCorreo" Type="Text" ID="{ae167e72-6a36-4172-af1e-e8cde0ef4c40}" SourceID="{{listid:Notificaciones}}" StaticName="AsuntoCorreo" ColName="nvarchar4" RowOrdinal="0" CustomFormatter="" Version="1" />
+            <Field AppendOnly="FALSE" DisplayName="CuerpoCorreo" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="CuerpoCorreo" Required="TRUE" RichText="FALSE" RichTextMode="Compatible" Title="CuerpoCorreo" Type="Note" ID="{98e41d5f-300a-488f-8368-b29f4de0b06a}" SourceID="{{listid:Notificaciones}}" StaticName="CuerpoCorreo" ColName="ntext2" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RestrictedMode="TRUE" Version="2" />
+            <Field DisplayName="Destinatario" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Destinatario" Required="TRUE" Title="Destinatario" Type="Text" ID="{cf3013a2-64ab-4301-a1c6-ee748ddb8661}" SourceID="{{listid:Notificaciones}}" StaticName="Destinatario" ColName="nvarchar5" RowOrdinal="0" CustomFormatter="" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Título" />
+          </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Control total" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Colaborar no editar ni borrar" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Editar" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://flow-apim-msmanaged-na-centralus-01.azure-apim.net/apim/sharepointonline/ontableupdatedhook?r=https%253a%252f%252fprod-20.westus.logic.azure.com%252fworkflows%252fee6649c44c5f422982a21a33e33244ab%252ftriggers%252fCuando_se_crea_una_nueva_notificacion%252fpaths%252finvoke%253fapi-version%253d2016-06-01%2526sp%253d%25252Ftriggers%25252FCuando_se_crea_una_nueva_notificacion%25252Frun%25252C%25252Ftriggers%25252FCuando_se_crea_una_nueva_notificacion%25252Fread%2526sv%253d1.0%2526sig%253dlwYAxw3KNcWEpQvCj0sF7KulP4KR_MQwWs3MX30A4CM" ExpiresInDays="2" />
+            <pnp:Webhook ServerNotificationUrl="https://southcentralus1-0.pushnp.svc.ms/notifications?token=9725b057-1cae-4c22-b683-d1c2fe8774f5" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

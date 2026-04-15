@@ -1,0 +1,234 @@
+{
+    "$schema": "https://aka.ms/sppnp-extract-configuration-schema",
+    "handlers": [
+        "Lists",
+        "WebSettings",
+        "Pages",
+        "SiteSecurity",
+        "Navigation",
+        "SiteSettings"
+    ],
+    "persistAssetFiles": true,
+    "siteSecurity": {
+        "includeSiteGroups": true
+    },
+    "pages": {
+        "excludeAuthorInformation": false,
+        "includeAllClientSidePages": true
+    },
+    "navigation": {
+        "removeExistingNodes": true
+    },
+    "lists": {
+        "lists": [
+            {
+                "title": "Boveda",
+                "includeItems": false
+            },
+            {
+                "title": "Aprobadores",
+                "includeItems": false
+            },
+            {
+                "title": "CondicionesDocumento",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+					    "Title",
+                        "Activo"				  
+                    ]
+                }
+            },
+            {
+                "title": "ConfiguracionRecurrencia",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "DiasAnticipacion",
+						"DiasFrecuencia"
+                    ]
+                }
+            },
+            {
+                "title": "ContadorConsecutivos",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Anio",
+                        "UltimoConsecutivoUtilizado"
+                    ]
+                }
+            },
+            {
+                "title": "ControlEliminacionDocumentos",
+                "includeItems": false
+            },
+            {
+                "title": "EstatusRevisionDocumento",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "Activo"
+                    ]
+                }
+            },
+            {
+                "title": "EstatusSolicitud",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "Activo"
+                    ]
+                }
+            },
+            {
+                "title": "FlujoEstatusSolicitudes",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "EstatusActual",
+                        "SiguienteEstatusAprobacion",
+                        "SiguienteEstatusRechazo",
+                        "TipoSolicitud"
+                    ]
+                }
+            },
+            {
+                "title": "HistorialSolicitudes",
+                "includeItems": false
+            },
+            {
+                "title": "PlantillasNotificaciones",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+						"TipoNotificacion",
+                        "AsuntoCorreo",
+						"CuerpoCorreo"
+                    ]
+                }
+            },
+            {
+                "title": "Roles",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [                        
+						"Title",
+                        "Activo",
+                        "SeguimientoSolicitudesResguardo",
+                        "SolicitarPrestamoDocumentos"
+                    ]
+                }
+            },
+            {
+                "title": "Solicitudes",
+                "includeItems": false
+            },
+            {
+                "title": "TiposDocumento",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "Consecutivo",
+                        "TipoTramite",
+                        "Expira",
+                        "ExpiraValorTexto",
+                        "Confidencial",
+                        "ConfidencialValorTexto",
+                        "PermisoVisualizacion",
+                        "Activo"
+                    ]
+                }
+            },
+            {
+                "title": "TiposDocumentoRol",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "TipoDocumento",
+                        "Rol",
+                        "Activo"
+                    ]
+                }
+            },
+            {
+                "title": "TiposDocumentoSolicitudes",
+                "includeItems": false
+            },
+            {
+                "title": "TiposNotificaciones",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "Activo"
+                    ]
+                }
+            },
+            {
+                "title": "TiposSolicitud",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "Activo"
+                    ]
+                }
+            },
+            {
+                "title": "TiposTramite",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "Activo"
+                    ]
+                }
+            }
+        ]
+    }
+}

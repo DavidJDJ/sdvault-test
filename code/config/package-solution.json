@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "soriana-admindocs-boveda-client-side-solution",
+    "id": "51141bde-6f41-4581-9175-d6a668e2ca84",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "soriana-admindocs-boveda description"
+      },
+      "longDescription": {
+        "default": "soriana-admindocs-boveda description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "soriana-admindocs-boveda Feature",
+        "description": "The feature that activates elements of the soriana-admindocs-boveda solution.",
+        "id": "07f3b59d-5467-4552-8335-e2115e3ad47d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/soriana-admindocs-boveda.sppkg"
+  }
+}

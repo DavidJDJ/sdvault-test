@@ -1,0 +1,43 @@
+{
+    "$schema": "https://aka.ms/sppnp-extract-configuration-schema",
+    "handlers": [
+        "Lists"
+    ],
+    "persistAssetFiles": true,
+    "siteSecurity": {
+        "includeSiteGroups": false
+    },
+    "pages": {
+        "excludeAuthorInformation": false,
+        "includeAllClientSidePages": false
+    },
+    "navigation": {
+        "removeExistingNodes": false
+    },
+    "lists": {
+        "lists": [
+            {
+                "title": "Asuetos",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<Order><FieldRef Name='ID' /></Order>",
+                    "includeAttachments": false,
+                    "viewFields": [
+                        "Title",
+                        "Fecha"
+                    ]
+                }
+            },
+            {
+                "title": "GerentesSucursales",
+                "includeItems": false
+            },
+            {
+                "title": "Notificaciones",
+                "includeItems": false
+            }
+            
+        ]
+    }
+}

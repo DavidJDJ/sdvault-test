@@ -1,0 +1,120 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.primaryButton{
+  background-color: $ms-color-themePrimary;
+  color: $ms-color-white;
+}
+
+.formularioSolicitud {
+  padding: 10px;
+
+  .title {
+    @include ms-font-xl;
+    label {
+      font-size: 25px;
+    }
+    text-align: center;
+  }
+  
+  .subTitleSection{
+    width:100%; 
+    text-align:left; 
+    border-bottom: 1px solid #ccc8c8; 
+    line-height:0.1em; 
+    margin:20px 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .subTitleSection .subTitleSectionLabel{
+    background-color:#fff; 
+    padding:0 10px 0 0;
+  }
+  .generalForm{
+    @include ms-Grid;
+  }
+  .row {
+    @include ms-Grid-row;
+    padding: 0 20px;
+  }
+  .column {
+    @include ms-Grid-col;
+    @include ms-sm6
+  }
+  .gridContainer {
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  .grid {
+    @include ms-Grid;
+  }
+
+  .gridRow_View {
+    @include ms-Grid-row;
+    margin-bottom: 18px;
+  }
+
+  .butonContainer{
+    text-align: right;
+    margin: 20PX;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}

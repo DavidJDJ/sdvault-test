@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "solicitud-resguardo-documentos-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/solicitudResguardoDocumentos/SolicitudResguardoDocumentosWebPart.js",
+          "manifest": "./src/webparts/solicitudResguardoDocumentos/SolicitudResguardoDocumentosWebPart.manifest.json"
+        }
+      ]
+    },
+    "dashboard-solicitudes-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dashboardSolicitudes/DashboardSolicitudesWebPart.js",
+          "manifest": "./src/webparts/dashboardSolicitudes/DashboardSolicitudesWebPart.manifest.json"
+        }
+      ]
+    },
+    "solicitud-boveda-digital-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/solicitudBovedaDigital/SolicitudBovedaDigitalWebPart.js",
+          "manifest": "./src/webparts/solicitudBovedaDigital/SolicitudBovedaDigitalWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GlobalStrings": "lib/general/loc/{locale}.js",
+    "SolicitudResguardoDocumentosWebPartStrings": "lib/webparts/solicitudResguardoDocumentos/loc/{locale}.js",
+    "DashboardSolicitudesWebPartStrings": "lib/webparts/dashboardSolicitudes/loc/{locale}.js",
+    "SolicitudBovedaDigitalWebPartStrings": "lib/webparts/solicitudBovedaDigital/loc/{locale}.js"
+  }
+}
